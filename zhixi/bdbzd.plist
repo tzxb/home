@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://s.beta.myapp.com/myapp/rdmexp/exp/file2/2019/02/24/comkingkrbianselong_2_f2e1ec7e-b425-5305-b8ce-57d5c8616a17.ipa</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>needs-shine</key>
+					<true/>
+					<key>url</key>
+					<string>http://t.cn/EbDFiMD</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>needs-shine</key>
+					<true/>
+					<key>url</key>
+					<string>http://t.cn/EbDFiMD</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.bdbzd.iosapp</string>
+				<key>bundle-version</key>
+				<string></string>
+				<key>kind</key>
+				<string>software</string>
+				<key>subtitle</key>
+				<string>bdbzd</string>
+				<key>title</key>
+				<string>百度不知道－更多精彩请关注微信公众号：IOS福利社 </string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

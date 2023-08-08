@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>微信公众号文章封面图提取_微信文章首图提取_微信图文缩略图提取_蘑菇在线工具</title>
+    <meta name="referrer" content="never">
+    <meta name="description" content="蘑菇在线工具提供各种新媒体助手工具大全，其中包括微信图文视频提取，微信超链接，微信短网址,微信一键关注页面等，利用小工具往往能够达到事半功倍的效果！">
+    <meta name="keywords" content="微信公众号文章封面图提取,微信文章首图提取,微信图文缩略图提取,在线工具">
+    <link rel="stylesheet" href="css/vxfm.css"/>
+</head>
+<body>
+
+<!-- 主体内容部分 -->
+<section class="toolsBody">
+    <section class="toolsBg">
+        <!-- 右侧内容 -->
+        <div class="toolsRight">
+
+            <!-- 微信封面图提取 -->
+            <div class="toolsRightBg tabBg5">
+                <div class="toolsRightTitle">微信封面图提取</div>
+                <div class="toolsRightBody toolsRightVideo">
+                    <div class="toolsRightFirst">
+                        <form id="form" action="##" onsubmit="return false" method="post">
+                            <input type="text" name="url" class="toolsRightFirstInput1"
+                                   placeholder="微信文章地址,比如：https://mp.weixin.qq.com">
+                            <a class="toolsRightFirstP2 coverBtn" onclick="login()">提取封面</a>
+                        </form>
+                    </div>
+                    <div class="toolsRightFirst">
+                        <input type="text" name="" class="toolsRightFirstInput1 coverInput" id="coverInput"
+                               placeholder="封面图地址">
+                        <a class="toolsRightFirstP2 fzBtn" target="_blank">打开保存</a>
+                    </div>
+                    <div class="toolsRightCoverDrawing">
+                        <p class="toolsRightCoverDrawingp1"><img
+                                src="https://iph.href.lu/900x383?text=%E5%B0%81%E9%9D%A2%E5%9B%BE&fg=999999&bg=cccccc"
+                                id="coverImg"></p>
+                    </div>
+                    <!-- <div class="toolsRightSecond"><a href="/" target="_blank">点击此处查看帮助教程</a></div> -->
+                    <p class="toolsRightThirdTitle">使用说明：</p>
+                    <p class="toolsRightThirdTxt">1、微信文章必须是以https://mp.weixin.qq.com开头的才可以</p>
+                    <p class="toolsRightThirdTxt">2、点击“提取"按钮，提取微信图文中的封面图片，首/次图文都可以</p>
+                    <p class="toolsRightThirdTxt">3、本提取功能，支持微信已群发文章消息和素材管理里的文章</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<script src="js/3jquery.min.js"></script>
+<script type="text/javascript">
+    function login() {
+        $.ajax({
+            //几个参数需要注意一下
+            type: "POST",//方法类型
+            dataType: "json",//预期服务器返回的数据类型
+            url: "wxfm.php",//url
+            data: $('#form').serialize(),
+
+            success: function (res) {
+                console.log(res);//打印服务端返回的数据(调试用)
+                if (res.code == 200) {
+                    alert(res.msg);
+                    $('#coverInput').attr('value', res.data);
+                    $('#coverImg').attr('src', res.data);
+                    $('.fzBtn').attr('href', res.data)
+                } else {
+                    alert(res.msg);
+                }
+            },
+            error: function () {
+                alert('erre');
+            }
+        });
+    }
+</script>
+
+<!-- ——————————————————————网站底部信息——————————————————————————————-->
+<!-- 尾部 -->
+<div class="Foot">
+    <div class="FootBody">
+        <div class="FilingInformation" style="text-align: center;">
+            <p>CopyRight © 2022 by <a href="https://iosfls.cf/" target="_blank">微信公众号文章封面图提取</a> . all
+                rights reserved</p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

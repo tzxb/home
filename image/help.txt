@@ -1,0 +1,14 @@
+
+sudo -i
+
+
+
+
+OK，现在我们先输入 sudo -i 来切换到 root 用户，然后再输入下面的命令来安装 V2Ray
+
+bash <(curl -s -L https://v2ray6.com/v2ray.sh)
+然后选择安装，即是输入 1 回车
+
+
+
+希望楼上的朋友抓紧去申诉，这是申诉地址 https://support.google.com/accounts/contact/suspended?p=grandcentral，内容就写：一直是谷歌粉丝，帮他们宣传，理解 GV 的规则，并且理解 google 通过检测发送垃圾邮件的方式，自己并没有这么做，希望能恢复。手动翻译一下。。。
